@@ -16,7 +16,7 @@ DEFAULT_RAW_ROOT = Path(
     "raw_dataset_cpu_manual_1"
 )
 
-# Same 7 test bags used for monodepth2 and Zoe eval
+# 7 test bags
 AGCO_TEST_BAG_NAMES = [
     "tractor_fendt_1038_961_23_0008_syslogic_orin_nx_17187910_log_2024-04-16-13-27-54_2",
     "tractor_fendt_1038_961_23_0008_syslogic_orin_nx_17187910_log_2024-04-16-13-29-24_5",

@@ -112,8 +112,3 @@ python finetune_eval_on_agco_dav3/predicting_depth_maps_da3.py \
   Smoothed / filled depth dataset (Telea-limited filling + optional bilateral filtering).
 
 ---
-
-## Reference
-
-Thesis:
-Monocular Depth Estimation with LiDAR Supervision: Automated Dataset Preparation and Model Evaluation for Agricultural Machinery

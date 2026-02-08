@@ -482,9 +482,9 @@ def run_bag_mode(args, zoe):
 def parse_args():
     p = argparse.ArgumentParser()
 
-    p.add_argument("--raw-root", type=str, default="/home/sameer/Documents/raw_dataset_cpu_manual_1",
+    p.add_argument("--raw-root", type=str, default="/path/to/dataset/raw_dataset_cpu_manual_1",
                    help="raw_dataset_cpu_manual_1 root (has rectified/ and depth_z16/)")
-    p.add_argument("--zoe-repo-root", type=str, default="/home/sameer/Documents/Zoedepth_v1/ZoeDepth-1.0",
+    p.add_argument("--zoe-repo-root", type=str, default="/path/to/repo/root/Zoedepth_v1/ZoeDepth-1.0",
                    help="local ZoeDepth repo root (contains hubconf.py)")
     p.add_argument("--model", type=str, default="ZoeD_K", choices=["ZoeD_N", "ZoeD_K", "ZoeD_NK"])
 

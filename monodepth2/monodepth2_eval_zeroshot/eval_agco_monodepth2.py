@@ -6,7 +6,7 @@ Zero-shot evaluation of monodepth2 (mono_640x192) on AGCO rectified + LiDAR dept
 Usage example:
 
   python eval_agco_monodepth2.py \
-      --raw-root /media/sameer/ran_epav_disk/Thesis/bags_from_smb/data_preparation/raw_dataset_cpu_manual_1 \
+      --raw-root /path/to/dataset/raw_dataset_cpu_manual_1 \
       --weights-folder ./models/mono_640x192 \
       --vis-dir agco_eval_vis
 
@@ -24,7 +24,7 @@ import torch
 from torch.utils.data import Dataset, DataLoader
 
 import sys
-sys.path.append("/media/sameer/ran_epav_disk/Thesis/public_dataset_and_models/monodepth2")
+sys.path.append("/path/to/repo/monodepth2")
 
 import networks
 from layers import disp_to_depth
@@ -319,7 +319,7 @@ def parse_args():
     p = argparse.ArgumentParser()
     p.add_argument("--raw-root", type=str, default=str(DEFAULT_RAW_ROOT),
                    help="Root of raw_dataset_cpu_manual_1 (containing rectified/ and depth_z16/)")
-    p.add_argument("--weights-folder", type=str, default="/media/sameer/ran_epav_disk/Thesis/public_dataset_and_models/monodepth2/models/mono_640x192",
+    p.add_argument("--weights-folder", type=str, default="/path/to/repo/monodepth2/models/mono_640x192",
                    help="Folder with encoder.pth and depth.pth")
     p.add_argument("--batch-size", type=int, default=1)
     p.add_argument("--num-workers", type=int, default=4)

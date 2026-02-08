@@ -406,7 +406,7 @@ def main():
                     cv2.imwrite(str(out0), cv2.cvtColor(stacked_color, cv2.COLOR_RGB2BGR))
 
                     # ----- GRAY DEPTH-MAP VIS: [RGB | GT(gray z16-like) | PRED(gray z16-like)] -----
-                    # GT sparse in mask, Pred full (same as your finetuned eval)
+                    # GT sparse in mask, Pred full
                     gt_sparse = gt_c.copy()
                     gt_sparse[~m] = 0.0
 

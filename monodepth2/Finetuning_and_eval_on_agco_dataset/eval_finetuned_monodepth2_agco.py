@@ -13,7 +13,7 @@ This script:
 Usage example (from monodepth2 repo root):
 
   python Finetuning_and_eval_on_agco_dataset/eval_finetuned_monodepth2_agco.py \
-  --raw-root /home/sameer/Documents/Zoedepth_v1/raw_dataset_cpu_manual_1 \
+  --raw-root /path/to/dataset/raw_dataset_cpu_manual_1 \
   --weights-folder ./models_finetuned_on_agco/agco_mono_train20_val20 \
   --test-fraction 0.3 \
   --vis-dir ./agco_test_vis \

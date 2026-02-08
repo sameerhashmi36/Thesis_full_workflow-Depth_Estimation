@@ -126,7 +126,7 @@ def compute_errors(gt, pred):
 
 
 # ---------------------------
-# Visualization utils (same spirit as Zoe strict)
+# Visualization utils
 # ---------------------------
 def _normalize_depth_to_8bit(depth_m, vmin, vmax):
     d = depth_m.astype(np.float32).copy()

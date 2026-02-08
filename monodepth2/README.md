@@ -1,4 +1,4 @@
-# Monodepth2 – AGCO Fine-tuning and Evaluation
+# Monodepth2 – Fine-tuning and Evaluation
 
 This directory contains custom scripts for training, evaluation, and visualization of Monodepth2 using LiDAR-supervised depth data from agricultural machinery. The implementation is built on top of the official Monodepth2 repository and should be run from its root directory.
 
@@ -125,9 +125,3 @@ Outputs stacked RGB–GT–Prediction images or videos depending on the mode use
 
 ---
 
-## Reference
-
-This pipeline was developed as part of a Master’s thesis at Aalborg University in collaboration with AGCO:
-
-**“Monocular Depth Estimation with LiDAR Supervision:  
-Automated Dataset Preparation and Model Evaluation for Agricultural Machinery”**

@@ -11,7 +11,6 @@ Modes:
    - ALSO finds GT fast by filename:
        rectified_idx{X}_t...png  -> depth_idx{X:06d}_t...png
      then checks existence under: raw_root/depth_z16/<bag>/<depth_filename>
-   - Saves SAME outputs as index mode.
 
 3) Bag clip mode: --bag <bag_name>
    - Creates MP4:

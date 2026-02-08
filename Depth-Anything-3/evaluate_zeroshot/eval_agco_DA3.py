@@ -253,7 +253,7 @@ def evaluate_da3_agco(pairs,
                 gt_vis = colorize_depth(gt_resized, vmin=min_depth, vmax=max_depth)
                 pred_vis = colorize_depth(pred_scaled, vmin=min_depth, vmax=max_depth)
 
-                # make sure same size
+                # make sure the size is same
                 H, W, _ = rgb_proc.shape
                 gt_vis = cv2.resize(gt_vis, (W, H), interpolation=cv2.INTER_NEAREST)
                 pred_vis = cv2.resize(pred_vis, (W, H), interpolation=cv2.INTER_NEAREST)

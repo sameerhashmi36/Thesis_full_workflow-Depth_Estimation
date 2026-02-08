@@ -12,7 +12,7 @@ Modes:
    - Predict depth for each RGB.
    - If filename matches rectified_idx{X}_t...png, tries fast GT resolve:
        depth_idx{X:06d}_t...png under raw_root/depth_z16/<bag>/
-   - Saves same outputs; if GT not found => GT is zeros.
+   - if GT not found => GT is zeros.
 
 3) Bag clip mode: --bag <bag_name>
    - Creates MP4 clip:
@@ -702,7 +702,7 @@ def parse_args():
                    help="output directory")
 
     # Zoe repo + weights
-    p.add_argument("--repo-root", type=str, default="/home/sameer/Documents/Zoedepth_v1/ZoeDepth-1.0",
+    p.add_argument("--repo-root", type=str, default="/path/to/repo/root/Zoedepth_v1/ZoeDepth-1.0",
                    help="local ZoeDepth repo path (torch.hub source='local')")
     p.add_argument("--model", type=str, default="ZoeD_K", choices=["ZoeD_K", "ZoeD_N", "ZoeD_NK"])
     p.add_argument("--base-ckpt", type=str, default="checkpoints/ZoeD_M12_K.pt",

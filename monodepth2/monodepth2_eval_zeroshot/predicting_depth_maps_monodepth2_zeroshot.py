@@ -492,7 +492,7 @@ def run_bag_mode(args, encoder, decoder, device):
 def parse_args():
     p = argparse.ArgumentParser()
 
-    p.add_argument("--raw-root", type=str, default="/home/sameer/Documents/raw_dataset_cpu_manual_1",
+    p.add_argument("--raw-root", type=str, default="/path/to/dataset/raw_dataset_cpu_manual_1",
                    help="raw_dataset_cpu_manual_1 root (has rectified/ and depth_z16/)")
     p.add_argument("--weights-folder", type=str, default="models/mono_640x192",
                    help="monodepth2 weights folder containing encoder.pth and depth.pth")

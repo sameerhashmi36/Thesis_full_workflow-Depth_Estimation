@@ -33,7 +33,7 @@ DEFAULT_RAW_ROOT = Path(
     "/path/to/dataset/raw_dataset_cpu_manual_1"
 )
 
-# AGCO bags to evaluate (same 7 as monodepth2/DA3)
+# AGCO bags to evaluate
 AGCO_BAG_NAMES = [
     "tractor_fendt_1038_961_23_0008_syslogic_orin_nx_17187910_log_2024-04-16-13-27-54_2",
     "tractor_fendt_1038_961_23_0008_syslogic_orin_nx_17187910_log_2024-04-16-13-29-24_5",
@@ -52,7 +52,7 @@ MODEL_NAME = "ZoeD_N"  # hubconf entry
 
 def choose_device():
     """
-    Same logic used: prefer CUDA if capability >= 7.0, else CPU.
+    prefer CUDA if capability >= 7.0, else CPU.
     """
     if torch.cuda.is_available():
         try:
@@ -78,7 +78,7 @@ def choose_device():
 
 def compute_errors(gt, pred):
     """
-    Same metrics as monodepth2
+    metrics as monodepth2
     gt, pred: 1D arrays of valid depth values (meters)
     """
     thresh = np.maximum(gt / pred, pred / gt)

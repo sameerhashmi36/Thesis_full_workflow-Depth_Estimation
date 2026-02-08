@@ -17,11 +17,11 @@ from typing import Tuple, List
 import random
 
 # --- Paths ---
-DEFAULT_RAW_ROOT = Path("/media/sameer/ran_epav_disk/Thesis/bags_from_smb/data_preparation/raw_dataset_cpu_manual_1")
+DEFAULT_RAW_ROOT = Path("/path/to/dataset/raw_dataset_cpu_manual_1")
 DEFAULT_OUTPUT_ROOT = Path("./models_finetuned_on_agco_smooth")
 
 # Repo path is only needed if importing DA3 from a local clone via sys.path.
-DEFAULT_DA3_REPO_ROOT = Path("/media/sameer/ran_epav_disk/Thesis/public_dataset_and_models/Depth-Anything-3")
+DEFAULT_DA3_REPO_ROOT = Path("/path/to/repo/root/Depth-Anything-3")
 
 # HuggingFace / local model id used by DepthAnything3.from_pretrained(...)
 DEFAULT_DA3_MODEL_ID = "depth-anything/DA3-LARGE"

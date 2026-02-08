@@ -14,7 +14,7 @@ Usage example:
 
 Train (normal dataset, with frame fractions):
 python Finetuning_and_eval_on_agco_dataset/train_finetune_monodepth2_agco.py \
-  --raw-root /home/sameer/Documents/Zoedepth_v1/raw_dataset_cpu_manual_1 \
+  --raw-root /path/to/dataset/raw_dataset_cpu_manual_1 \
   --pretrained-folder ./models/mono_640x192 \
   --output-folder ./models_finetuned_on_agco/agco_mono_640x192_finetuned_train20_val20 \
   --val-bag-fraction 0.2 \
@@ -25,7 +25,7 @@ python Finetuning_and_eval_on_agco_dataset/train_finetune_monodepth2_agco.py \
 Train (smooth dataset):
 python Finetuning_and_eval_on_agco_dataset/train_finetune_monodepth2_agco.py \
   --use-smooth \
-  --raw-root /home/sameer/Documents/Zoedepth_v1/raw_dataset_cpu_manual_1 \
+  --raw-root /path/to/dataset/raw_dataset_cpu_manual_1 \
   --pretrained-folder ./models/mono_640x192 \
   --output-folder ./models_finetuned_on_agco/agco_mono_640x192_finetuned_smooth_train20_val20 \
   --val-bag-fraction 0.2 \
